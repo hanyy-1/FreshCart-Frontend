@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+@theme{
+     --color-maincolor: #0aad0a;
+}
+
+@utility container{
+margin:auto;
+
+ @media (width >= 80rem   ) {
+        max-width: 75rem 
+ }
+
+}
+.active{
+  font-weight: 800;
+}
+@layer components{
+  .input{
+    @apply bg-white grow rounded-md focus:outline-none  py-1 px-2
+    
+  }
+  .btn{
+    @apply bg-maincolor px-3 py-1 rounded-md text-white
+  }
+}
